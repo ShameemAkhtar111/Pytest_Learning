@@ -24,3 +24,8 @@ class Test_Google(BaseTest):
     def test_google_title(self):
         self.driver.get("https://www.google.co.in")
         assert self.driver.title == "Google"
+    
+
+    def test_fb_title(self):
+        self.driver.get("https://facebook.com")
+        assert self.driver.title == "Facebook – log in or sign up"
