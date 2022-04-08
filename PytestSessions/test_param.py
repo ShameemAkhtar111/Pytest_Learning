@@ -10,7 +10,7 @@ class BaseTest:
 class Test_Iengage(BaseTest):
     @pytest.mark.parametrize(
                             "username,password",
-                            [('78877','Apr@cfg1')]
+                            [('[username]','[password]')]
                             )
     def test_iengage_login(self,username,password):
         self.driver.get("https://iengage.coforge.com")
