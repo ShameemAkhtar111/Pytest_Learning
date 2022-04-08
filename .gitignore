@@ -1,4 +1,4 @@
 .pytest_cache/
 .vscode/
 assets/
-*/_pycache_/
+*/__pycache__/
