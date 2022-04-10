@@ -12,16 +12,15 @@ class LoginPage(ElementFunctions):
 
     def __init__(self, driver):
         super().__init__(driver)
-        self.driver.get(reader.get_url())
     
-    # def launch_orangehrm(self):
-    #     self.driver.get(reader.get_url())
+    def launch_orangehrm(self):
+        self.driver.get(reader().get_url())
 
     def enter_username(self,usrname):
         self.set_text(USERNAME,usrname)
     
     def enter_password(self,pwd):
-        self.set_Text(PASSWORD,pwd)
+        self.set_text(PASSWORD,pwd)
     
     def login(self,usr_nm,passwrd):
         self.enter_username(usr_nm)

@@ -11,7 +11,7 @@ class ElementFunctions:
         WebDriverWait(self.driver,10).until(EC.element_to_be_clickable(by_locator)).click()
     
     
-    def set_Text(self,by_locator,text):
+    def set_text(self,by_locator,text):
         WebDriverWait(self.driver,10).until(EC.visibility_of_element_located(by_locator)).send_keys(text)
     
 
